@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+     <section class="main">
+        <div class="container">
+            <h1>Студенты</h1>
+            <form action="" id="add-student">
+                <div class="mb-3">
+                    <input class="form-control" id="input-name" type="text" placeholder="Имя">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="input-surname" type="text" placeholder="Фамилия">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="input-lastname" type="text" placeholder="Отчество">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="input-faculty" type="text" placeholder="Факультет">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="input-studyStart" data-min="1999" type="number" placeholder="Начало обучения">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" id="input-birthDate" min="1900-01-01" type="date">
+                </div>
+                <button class="btn btn-outline-success mb-3">
+                    Добавить студента
+                </button>
+            </form>
+            <form id="src-student">
+                <div class="form-row mb-3">
+                    <div class="col">
+                        <input class="form-control" id="src-name" type="text" placeholder="Имя">
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="src-surname" type="text" placeholder="Фамилия">
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="src-lastname" type="text" placeholder="Отчество">
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="src-faculty" type="text" placeholder="Факультет">
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="src-studyStart" type="number" placeholder="Начало обучения">
+                    </div>
+                    <div class="col">
+                        <input class="form-control" id="src-studeEnd" type="number" placeholder="Конец обучения">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-success mb-3">
+                    Найти студента
+                </button>
+            </form>
+            <table class="table table-hover">
+                <thead>
+                    <th data-column="surname">ФИО</th>
+                    <th data-column="faculty">Факультет</th>
+                    <th data-column="birthday">Дата рождения</th>
+                    <th data-column="studyStart">Годы обучения</th>
+                    <th></th>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+            </table>
+        </div>
+     </section>
+</body>
+    <script defer type="module" src="main.js"></script>
+
+</html>
