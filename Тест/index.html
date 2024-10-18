@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMAGUCHI-test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="ergonomics">
+        <div class="container">
+            <h2 class="ergonomics__title">Эргономика —
+                ключ к успеху современного человека
+            </h2>
+            <p class="ergonomics__text ergonomics__text--desktop-hidden">
+                Cтильная столешница , выполненной из экологически безопасного материала (ДСП),
+                и усиленной стальной рамы не составит труда разместить на поверхности инновационного стола большое
+                количество крупногабаритной техники: стол выдерживает нагрузку до 80 кг.
+            </p>
+            <div class="ergonomics__table table">
+                <picture class="table__upper-part">
+                    <source media="(max-width:1919px)" srcset="img/upper-table-mobile.png">
+                    <source media="(min-width:1920px)" srcset="img/upper-table-desktop.png">
+                    <img src="img/upper-table-desktop.png" alt="изображение нижней части стола">
+                </picture>
+
+                <button class="table__up" type="button">вверх</button>
+                <button class="table__down" type="button">вниз</button>
+                <picture class="table__lower-part">
+                    <source media="(max-width:1919px)" srcset="img/lower-table-mobile.png">
+                    <source media="(min-width:1920px)" srcset="img/lower-table-desktop.png">
+                    <img src="img/lower-table-desktop.png" alt="изображение нижней части стола">
+                </picture>
+            </div>
+            <p class="ergonomics__text">
+                <span class="ergonomics__text--mobile-hidden">
+                    Cтильная столешница , выполненной из экологически безопасного материала (ДСП),
+                    и усиленной стальной рамы не составит труда разместить на поверхности инновационного стола большое
+                    количество крупногабаритной техники: стол выдерживает нагрузку до 80 кг.<br>
+                    <br>
+                </span>
+                Также столешница, обладающая меламиновым покрытием, хорошо переносит механические
+                воздействия (царапины
+                или удары), при контакте с водой не разрушается, устойчиво переносит бытовые химические вещества
+                и не выгорает под воздействием ультрафиолета.
+            </p>
+        </div>
+    </section>
+    <section class="voice-control">
+        <div class="container">
+            <h2 class="voice-control__title">Yamaguchi<br>
+                Voice Control
+            </h2>
+            <p class="voice-control__text">Вы можете управлять программами массажа или самим креслом с помощью голосовых
+                команд, приведённых ниже. Коснитесь кратковременно кнопки голосового управления, расположенной на левом
+                подлокотнике, для запуска сеанса голосового управления.<br>
+                <br>
+                Произнесите одну из доступных команд. Если произнесённая команда распознана, вы услышите ответ и кресло
+                приступит к выполнению запроса.
+            </p>
+            <div class="voice-control__animation animation">
+                    <picture class="animation__girl">
+                        <source media="(max-width:1919px)" srcset="img/girl-mobile.png">
+                        <source media="(min-width:1920px)" srcset="img/girl-desktop.png">
+                        <img src="img/girl-desktop.png" alt="изображение девушки">
+                    </picture>
+                <div class="animation__portal"></div>
+            </div>
+            <picture class="voice-control__chat-image">
+                <source media="(max-width:1919px)" srcset="img/chat-mobile.png">
+                <source media="(min-width:1920px)" srcset="img/chat-desktop.png">
+                <img src="img/chat-desktop.png" alt="изображение чата">
+            </picture>
+            <div class="voice-control__slogan slogan">
+                <strong class="slogan__say">Скажи<span class="slogan__say--punctuation">:</span></strong>
+
+                <strong class="slogan__main">
+                    <span class="slogan__main--mobile-big">
+                        <span class="slogan__main--punctuation">«</span>ОКЕЙ<span
+                            class="slogan__main--punctuation">,</span></span> ЯМАГУЧИ<span
+                        class="slogan__main--punctuation">»</span>
+                </strong>
+            </div>
+        </div>
+    </section>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>
